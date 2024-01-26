@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenger Decodificador Malú Braga - ONE</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <header class="container__cabecalho">
+        <h1 class="container__cabecalho__logo">Decodi<span>FY</span></h1>
+        <nav class="conteiner__cabecalho__navbar">
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="conteiner__texto">
+            <h1 class="conteiner__texto__h1">Deseja realizar a criptografia de algum texto?</h1>
+            <p class="conteiner__texto__p">A Decodi<span>FY</span> te ajuda!</p>
+        </section>
+            <img class="conteiner__texto__img" src="assets/pessoa-chave (1).png" alt="imagem de homem segurando uma chave">
+    </main>
+
+    <section>
+        <div class="container__input">
+            <div class="input">
+                <h1 class="container__input__h1">Mantenha seus textos seguros com a criptografia. <img class="container__input__img__cadeado" src="assets/simbolo-de-interface-de-cadeado-fechado-retangular.png" alt="cadeado fechado"></h1>
+                <textarea id="input__texto" placeholder="Digite seu texto aqui..." class="text__area"></textarea>
+                <p><img src="assets/Group.png" alt="imagem de atenção">Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="buttons">
+                <button onclick="criptografar()" class="btn__criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="btn__descriptografar">Descriptografar</button>
+            </div>
+            <div>
+                <img class="img__input" src="assets/angulo-duplo-pequeno-direito.png" alt="">
+            </div>
+        
+            <div id="output">
+                <h2 class="h2__from__output">Sua mensagem criptografada aparecerá aqui.</h2>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="container__btn">
+            <button onclick="copiar()" class="btn__copiarTexto">CopiarTexto</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="rodape">Desenvolvido por <a href="https://www.linkedin.com/in/malubragax/" target="_blank">Malú Braga</a>     
+    <div class="footer__redes">
+        <p class="footer__redes__p"> Acesse minhas redes:</p>
+        <a href="https://www.linkedin.com/in/malubragax/" target="_blank"><img class="footer__img" src="assets/linkedin.png" alt=""></a>
+        <a href="https://github.com/MaluBragaX" target="_blank"><img class="footer__img" src="assets/github.png" alt=""></a>
+    </div>         
+    </footer>
+
+    <script src="decodificador.js"></script>
+</body>
+</html>
